@@ -4,14 +4,16 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: pink;
+  background: lightgreen;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+
   height: 100vh;
-  width: 100vw;
-  position: absolute;
+  width: 80vw;
+  position: fixed;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
+
   z-index: 1;
 
   @media (min-width: 768px) {
@@ -20,7 +22,7 @@ export const StyledMenu = styled.nav`
 `;
 
 export const StyledBurger = styled.button`
-  position: absolute;
+  position: fixed;
   top: 2%;
   right: 2rem;
   display: flex;

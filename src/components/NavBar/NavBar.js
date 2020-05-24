@@ -1,19 +1,29 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { StyledMenu, StyledBurger } from "./NavBar.styled";
+import styled from "styled-components";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-family: "Bad Script", cursive;
+  font-size: 30px;
+`;
 
 const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
-      <NavLink to="/services" onClick={() => setOpen(!open)}>
+      <StyledLink to="/" onClick={() => setOpen(!open)}>
+        Home
+      </StyledLink>
+      <StyledLink to="/services" onClick={() => setOpen(!open)}>
         Services
-      </NavLink>
-      <NavLink to="/about" onClick={() => setOpen(!open)}>
+      </StyledLink>
+      <StyledLink to="/about" onClick={() => setOpen(!open)}>
         About
-      </NavLink>
-      <NavLink to="/contact" onClick={() => setOpen(!open)}>
+      </StyledLink>
+      <StyledLink to="/contact" onClick={() => setOpen(!open)}>
         Contact
-      </NavLink>
+      </StyledLink>
     </StyledMenu>
   );
 };

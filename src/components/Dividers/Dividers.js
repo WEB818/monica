@@ -11,17 +11,17 @@ export const Diamond = styled.div`
 export const TriangleUp = styled.div`
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid black;
 `;
 
 export const TriangleDown = styled.div`
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid red;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid black;
 `;
 
 export const TriangleLeft = styled.div`
@@ -50,15 +50,17 @@ export const TriangleTopLeft = styled.div`
 export const TriangleTopRight = styled.div`
   width: 0;
   height: 0;
-  border-top: 100px solid red;
-  border-left: 100px solid transparent;
+  border-top: 10px solid black;
+  border-left: 10px solid transparent;
+  margin: 3px;
 `;
 
 export const TriangleBottomLeft = styled.div`
   width: 0;
   height: 0;
-  border-bottom: 100px solid red;
-  border-right: 100px solid transparent;
+  border-bottom: 10px solid black;
+  border-right: 10px solid transparent;
+  margin: 3px;
 `;
 
 export const TriangleBottomRight = styled.div`
