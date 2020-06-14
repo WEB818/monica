@@ -7,6 +7,10 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   font-family: "Bad Script", cursive;
   font-size: 30px;
+  color: darkgreen;
+  &:focus {
+    color: white;
+  }
 `;
 
 const Menu = ({ open, setOpen }) => {
@@ -23,6 +27,9 @@ const Menu = ({ open, setOpen }) => {
       </StyledLink>
       <StyledLink to="/contact" onClick={() => setOpen(!open)}>
         Contact
+      </StyledLink>
+      <StyledLink to="/faq" onClick={() => setOpen(!open)}>
+        FAQ
       </StyledLink>
     </StyledMenu>
   );

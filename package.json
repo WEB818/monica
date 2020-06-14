@@ -9,10 +9,18 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "aws-sdk": "^2.695.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "monica": "^1.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "serverless": "^1.72.0",
+    "serverless-form": "^1.0.5",
+    "serverless-http": "^2.5.0",
     "styled-components": "^5.1.0"
   },
   "scripts": {
@@ -35,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/WEB818/monica.git",
+  "author": "Wendy Bartos <54962661+WEB818@users.noreply.github.com>",
+  "license": "MIT"
 }
